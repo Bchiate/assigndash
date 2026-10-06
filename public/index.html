@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AssignDash: your syllabi, one dashboard</title>
+  <meta name="description" content="Upload course syllabi, spreadsheets or calendar exports and get one dashboard of every assignment, quiz and exam." />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/vendor/inter/index.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="landing">
+    <div class="demo-banner" id="demoBanner" hidden>
+      Demo mode: sample data only. Accounts and schedules are kept in memory and cleared when the server restarts.
+    </div>
+
+    <section class="hero">
+      <div class="hero-inner">
+        <h1 class="hero-title">📚 <span class="gradient-text">AssignDash</span></h1>
+        <p class="hero-sub">Upload your syllabi, course spreadsheets or calendar exports and get one dashboard of every assignment, quiz and exam.</p>
+        <div class="hero-features">
+          <div class="hf"><span class="hf-icon">📄</span> PDFs (including scans), photos, CSV/XLSX, ICS, or pasted text</div>
+          <div class="hf"><span class="hf-icon">🤖</span> AI pulls out the dates; you review them before anything is saved</div>
+          <div class="hf"><span class="hf-icon">📊</span> Timeline, calendar and per-class views with due times</div>
+        </div>
+        <div class="hero-actions">
+          <button class="hero-cta" id="demoBtn" hidden>Try the demo</button>
+          <button class="hero-cta" id="getStartedBtn">Get Started</button>
+        </div>
+        <div class="form-notice hero-notice" id="landingNotice" hidden></div>
+      </div>
+    </section>
+
+    <!-- Auth Modal -->
+    <div class="modal-overlay" id="authModal">
+      <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+        <h2 class="visually-hidden" id="authTitle">Log in or sign up</h2>
+        <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+        <div class="auth-tabs">
+          <button class="auth-tab active" data-tab="login">Log In</button>
+          <button class="auth-tab" data-tab="signup">Sign Up</button>
+        </div>
+
+        <form class="auth-form" id="loginForm">
+          <div class="form-group">
+            <label for="loginEmail">Email</label>
+            <input id="loginEmail" type="email" name="email" required autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="loginPassword">Password</label>
+            <input id="loginPassword" type="password" name="password" required autocomplete="current-password" />
+          </div>
+          <div class="form-error" id="loginError"></div>
+          <div class="form-notice" id="loginNotice" hidden></div>
+          <button type="button" class="btn-link" id="resendBtn" hidden>Resend the confirmation email</button>
+          <button type="submit" class="form-submit">Log In</button>
+        </form>
+
+        <form class="auth-form" id="signupForm" style="display:none">
+          <div class="form-group">
+            <label for="signupName">Name</label>
+            <input id="signupName" type="text" name="name" required maxlength="80" autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="signupEmail">Email</label>
+            <input id="signupEmail" type="email" name="email" required autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="signupPassword">Password</label>
+            <input id="signupPassword" type="password" name="password" required minlength="8" maxlength="72" autocomplete="new-password" />
+          </div>
+          <div class="form-error" id="signupError"></div>
+          <div class="form-notice" id="signupNotice" hidden></div>
+          <button type="submit" class="form-submit">Create Account</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="landing.js"></script>
+</body>
+</html>

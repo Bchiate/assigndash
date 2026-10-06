@@ -1,0 +1,33 @@
+STAT 2380 Applied Statistics with R: Fall 2026 schedule,,,,
+Week,Date,Topic,Deliverable,Due
+1,9/1/2026,Course overview; R and RStudio setup,,
+1,9/3/2026,Describing data: center and spread,,
+2,9/8/2026,Visualizing distributions,Homework 1,11:59 PM
+2,9/10/2026,Probability basics,,
+3,9/15/2026,Conditional probability,,
+3,9/17/2026,Random variables,Quiz 1,1:00 PM
+4,9/22/2026,The normal distribution,Homework 2,11:59 PM
+4,9/24/2026,Sampling distributions,,
+5,9/29/2026,The central limit theorem,,
+5,10/1/2026,Confidence intervals,Quiz 2,1:00 PM
+6,10/6/2026,Hypothesis tests,Homework 3,11:59 PM
+6,10/8/2026,Errors and power,,
+7,10/13/2026,Comparing two groups,,
+7,10/15/2026,Project kickoff,Project Proposal,11:59 PM
+8,10/20/2026,Midterm review,,
+8,10/22/2026,Midterm exam (in class),Midterm Exam,1:00 PM
+9,10/27/2026,Chi-square tests,,
+9,10/29/2026,Correlation,,
+10,11/3/2026,Simple linear regression,Homework 4,11:59 PM
+10,11/5/2026,Regression diagnostics,,
+11,11/10/2026,Multiple regression,,
+11,11/12/2026,Model selection,Quiz 3,1:00 PM
+12,11/17/2026,Interactions,Homework 5,11:59 PM
+12,11/18/2026,"Project check-in meetings, Wed-Fri (book a 15-minute slot)",Project Check-in Meeting,
+13,11/24/2026,Logistic regression,,
+13,11/26/2026,Project peer review (in class),Project Peer Review,1:00 PM
+14,12/1/2026,Resampling methods,Homework 6,11:59 PM
+14,12/3/2026,No class,,
+15,12/8/2026,Course review,,
+15,12/11/2026,Final project report due,Final Project Report,11:59 PM
+16,12/17/2026,Final exam,Final Exam,2:00 PM
